@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "Donut Writer",
+    "description": "Allow you to write frequently words.",
+    "version": "0.0.1",
+    "content_scripts": [
+        {
+            "matches": ["https://*/*", "http://*/*"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
